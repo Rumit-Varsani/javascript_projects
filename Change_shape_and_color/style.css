@@ -1,17 +1,19 @@
-#dot{    
+#dot{   
+    display: flex; 
     height: 250px;
     width: 250px;
     border-radius: 50%;
     background-color: green;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 .shape{
     background-color: white;
     position: relative;
     width: 100px;
     height: 100px;
-    left: 75px;
-    top: 75px;
+   
 }
 div {
     display: block;
