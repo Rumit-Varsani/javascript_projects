@@ -1,0 +1,28 @@
+#dot{    
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: green;
+    box-sizing: border-box;
+}
+.shape{
+    background-color: white;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 75px;
+    top: 75px;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
