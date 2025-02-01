@@ -1,43 +1,32 @@
-let textarea = document.querySelector(".textarea"); // Select the first textarea
-let addnote = document.querySelector(".addnote"); // Select the Add Note button
-let outputbox = document.querySelector(".output"); // Select the output container
+document.addEventListener('DOMContentLoaded', () => {
+    const noteText = document.getElementById('note-text');
+    const noteColor = document.getElementById('note-color');
+    const addNoteBtn = document.getElementById('add-note');
+    const notesContainer = document.getElementById('notes-container');
 
-addnote.addEventListener("click", function() {
-    // Get the value from the textarea
-    let noteText = textarea.value;
+    addNoteBtn.addEventListener('click', addNote);
 
-    // Check if the textarea is not empty
-    if (noteText.trim() !== "") {
-        // Create a new output box for the note
-        let newOutputBox = document.createElement("div");
-        newOutputBox.classList.add("outputbox");
+    function addNote() {
+        if (noteText.value.trim() === '') return;
 
-        // Create a new paragraph for the note text
-        let newParagraph = document.createElement("p");
-        newParagraph.classList.add("output-pera");
-        newParagraph.textContent = noteText;
+        const note = document.createElement('div');
+        note.className = 'note';
+        note.style.backgroundColor = noteColor.value;
 
-        // Create a delete button
-        let deleteButton = document.createElement("button");
-        deleteButton.classList.add("dltbtn");
-        deleteButton.textContent = "Delete";
+        const noteContent = document.createElement('p');
+        noteContent.textContent = noteText.value;
+        note.appendChild(noteContent);
 
-        // Append the paragraph and delete button to the new output box
-        newOutputBox.appendChild(newParagraph);
-        newOutputBox.appendChild(deleteButton);
-
-        // Append the new output box to the output container
-        outputbox.appendChild(newOutputBox);
-
-        // Clear the textarea
-        textarea.value = "";
-
-        // Show the output container if it's hidden
-        outputbox.style.display = "block";
-
-        // Add event listener to the delete button
-        deleteButton.addEventListener("click", function() {
-            outputbox.removeChild(newOutputBox);
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'X';
+        deleteBtn.className = 'delete-note';
+        deleteBtn.addEventListener('click', () => {
+            notesContainer.removeChild(note);
         });
+        note.appendChild(deleteBtn);
+
+        notesContainer.appendChild(note);
+
+        noteText.value = '';
     }
 });

@@ -1,118 +1,67 @@
-* {
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
-    box-sizing: border-box;
-     /* Added for better box model handling */
-}
-.body{
-    position: relative;
-    display: flex;
-    justify-content: center;
+    padding: 20px;
 }
 
-.container { /* Fixed the typo here */
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw; /* Ensures the container takes full height */
-    background-color: #f0f0f0; 
-    position: fixed;/* Light background for contrast */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.textarea {
-    width: 35vw;
-    height: 12vh;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
-    border-radius: 7px;
-    padding: 10px;
-    font-size: 16px; /* Increased font size for better readability */
-}
-
-.input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Reduced gap for better spacing */
-    flex-direction: row;
-    height: 30vh;
-    width: 100vw;
-    background-color: #3f4b58;
-    padding: 20px; /* Added padding for better spacing */
-    border-radius: 10px; /* Rounded corners for the input area */
-}
-
-.otr {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 10px;
-}
-
-.clr {
-    height: 40px;
-    width: 80px;
-}
-
-.addnote {
-    height: 40px;
-    width: 80px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
-    background-color: rgb(39, 54, 50);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.addnote:hover {
-    background-color: rgb(29, 44, 42); /* Darker shade on hover */
-}
-
-.output {
-    display: flex;
-    flex-direction: row; /* Stack notes vertically */
-    justify-content: flex-start; /* Align notes to the top */
-    align-items: center; /* Center align notes horizontally */
-    height: 88vh;
-    width: 70vw; /* Width of the output area */
-    margin-top: 20px; /* Margin above the output area */
-    padding: 0 20px; /* Add padding to the left and right for empty space */
-    font-size: x-large;
-}
-
-.outputbox {
-    background-color: #3f4b58;
-    border-radius: 10px;
-    justify-content: center;
+h1 {
     text-align: center;
-    width: fit-content; /* Change to fit-content to only take necessary width */
-    padding: 10px; /* Added padding for better spacing */
-    margin: 10px 0; /* Margin between notes */
-    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    color: #333;
 }
 
-.output-pera {
-    font-size: large;
-    color: #ffffff; /* Ensure text is readable */
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
-    max-width: 100%; /* Ensure it doesn't exceed the output box */
+.note-input {
+    display: flex;
+    margin-bottom: 20px;
 }
 
-.dltbtn {
-    background-color: red; /* Red background for delete button */
+#note-text {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+#note-color {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#add-note {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 
-.dltbtn:hover {
-    background-color: darkred; /* Darker shade on hover */
+.note {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.delete-note {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
 }

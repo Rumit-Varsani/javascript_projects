@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sticky Note</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="continar">
-      <div class="input">
-        <textarea
-          class="textarea"
-          rows="3"
-          placeholder="//Write your note here"
-        ></textarea>
-        <div class="otr">
-          <input class="clr" type="color" value="#fff" />
-          <button class="addnote">Add Note</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sticky Notes</h1>
+        <div class="note-input">
+            <input type="text" id="note-text" placeholder="Enter your note">
+            <input type="color" id="note-color" value="#ffff88">
+            <button id="add-note">Add Note</button>
         </div>
-      </div>
-      <div class="output">
-        <h4></h4>
-        <div class="outputbox"  style="display: none;">
-          <p class="output-pera"></p>
-          <button class="dltbtn">Delete</button>
-        </div>
-      </div>
+        <div id="notes-container"></div>
     </div>
-  </body>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
