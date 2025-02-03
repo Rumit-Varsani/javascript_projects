@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sort the table alphabetically</title>
 </head>
 <body>
-    
+    <div class="container">
+        <p>Click the button to sort the table alphabetically, based on customer name:</p>
+        <div class="btnposition">
+            <button id="sortbtn" onclick="sortTable()" >Sort</button>
+        </div>
+       
+
+        <table id="mytable">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Rumit</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>Hemil</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Avadh</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Aniket</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Bhavdeep</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>Viral</td>
+                <td>India</td>
+            </tr>
+        </table>
+
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
