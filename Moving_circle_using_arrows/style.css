@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    overflow: hidden;
+   
+}
+
+div{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(113, 180, 49);
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+}
