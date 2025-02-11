@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.target{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    
+}
+.player{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(20, 130, 44);
+}
