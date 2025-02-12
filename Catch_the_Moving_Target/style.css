@@ -22,3 +22,10 @@ body{
     width: 100px;
     background-color: rgb(20, 130, 44);
 }
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: black;
+}

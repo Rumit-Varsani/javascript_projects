@@ -1,28 +1,28 @@
 const circle = document.querySelector("div"); 
-let x = 50, y = 50; 
+let playerX = 50, playerY = 50; 
 
 document.addEventListener("keydown",function(event){
     const speed=30;
     const windowwidth = window.innerWidth-50;
     const windowheight = window.innerHeight-50;
 
-    if(event.key ==="ArrowRight" && x<windowwidth)
+    if(event.key ==="ArrowRight" && playerX<windowwidth)
     {
-        x+=speed;
+        playerX+=speed;
     }
-    else if (event.key ==="ArrowLeft" && x>0)
+    else if (event.key ==="ArrowLeft" && playerX>0)
     {
-        x-=speed;
+        playerX-=speed;
     }
-    else if(event.key === "ArrowDown" && y<windowheight)
+    else if(event.key === "ArrowDown" && playerY<windowheight)
     {
-        y+=speed;
+        playerY+=speed;
     }
-    else if(event.key ==="ArrowUp" && y>0)
+    else if(event.key ==="ArrowUp" && playerY>0)
     {
-        y-=speed;
+        playerY-=speed;
     }
 
-    circle.style.left = `${x}px`;
-    circle.style.top = `${y}px`;
+    circle.style.left = `${playerX}px`;
+    circle.style.top = `${playerY}px`;
 });
