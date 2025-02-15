@@ -1,61 +1,112 @@
-body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.container{
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
     display: flex;
-    justify-content: space-around;
-    height: fit-content;
-    width: 60vw;
+    justify-content: center;
     align-items: center;
-    
-}
-.product{
-    /* background-color: bisque; */
-    height: 40vh;
-    width: 35vw;
-    text-align: center;
-    border: 5px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    margin: 0;
 }
 
-.product_area{
+/* Main Container */
+.container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    margin: 7px;
+    gap: 20px;
+    background: #c4c4c4;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
-.btn_P_M{
+
+/* Product & Cart Sections */
+.products, .cart {
+    background: #d1d1d1;
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Product Item */
+.product_item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 170, 255, 0.5);
-    height: 3vh;
-    width: 10vw;
+    padding: 10px;
+    background: #8a8a8a;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Product Name & Price */
+.Pname {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.Pprice {
+    font-size: 14px;
+}
+
+/* Quantity & Buttons */
+.btn_P_M {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #4a90e2;
+    padding: 5px 10px;
     border-radius: 20px;
     color: white;
 }
-.cart{
-    
-    height: 40vh;
-    width: 20vw;
-    text-align: center;
-    border: 5px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.5);
-    
-}
-.Total_area{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+
+/* Buttons */
+button {
+    border: none;
+    background: #2c6fb4;
     color: white;
-    margin: 7px; 
-    
-    /* padding: 10px; */
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+button:hover {
+    background: #1d5f9f;
+}
+
+/* Cart Section */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b0b0b0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Total Price Styling */
+.total {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    background: #8a8a8a;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
 }

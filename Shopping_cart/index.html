@@ -4,70 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Shoping Cart</title>
+    <title>Shopping Cart</title>
 </head>
 <body>
     <div class="container">
+        <!-- Product List Section -->
         <div class="product">
             <h3>Products</h3>
-            <div class="product_area">
-
-                <p class="Pname">Product-1</p>
-                <p class="Pprice">100</p>
-                <div class="btn_P_M">
-                    <p>-</p>
-                    <p>2</p>
-                    <p>+</p>
-                </div>
+            <div class="product_area" id="product-list">
+                
+                <!-- Products will be dynamically inserted here -->
             </div>
-            <div class="product_area">
-
-                <p class="Pname">Product-1</p>
-                <p class="Pprice">100</p>
-                <div class="btn_P_M">
-                    <p>-</p>
-                    <p>2</p>
-                    <p>+</p>
-                </div>
-            </div>
-            <div class="product_area">
-
-                <p class="Pname">Product-1</p>
-                <p class="Pprice">100</p>
-                <div class="btn_P_M">
-                    <p>-</p>
-                    <p>2</p>
-                    <p>+</p>
-                </div>
-            </div>
-            
         </div>
+        
+        <!-- Cart Section -->
         <div class="cart">
             <h3>Cart</h3>
-            <div class="product_area">
-                <p class="Pname">Product-1</p>
-                <p>2</p>
-                <p>x</p>
-                <p>100</p>
-            </div>
-            <div class="product_area">
-                <p class="Pname">Product-1</p>
-                <p>2</p>
-                <p>x</p>
-                <p>100</p>
-            </div><div class="product_area">
-                <p class="Pname">Product-1</p>
-                <p>2</p>
-                <p>x</p>
-                <p>100</p>
+            <div class="product_area" id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
             </div>
             <div class="Total_area">
-                <p>Total :</p>
-                <p>800</p>
+                <p>Total:</p>
+                <p id="total-price">€0</p>
             </div>
-            
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
