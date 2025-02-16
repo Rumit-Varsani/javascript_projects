@@ -1,0 +1,70 @@
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#ti{
+    position: fixed;
+    font-size: 30px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    position:fixed;
+}
+
+ /* #title{
+   
+     text-align: center; 
+}  */
+#billin{
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+    font-size: 30px;
+}
+/* #billamount{
+    font-size: 30px;
+} */
+#sec{
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+/* #servicequality{
+
+    text-align: center;
+} */
+#ps{
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+    font-size: 30px;
+}
+/* #peoplesharing{
+
+    text-align: center;
+} */
+
+#calculate{
+
+    font-size: 40px;
+}
+#tip{
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+    font-size: 30px;
+}
+/* #tipamount{
+    text-align: center;
+
+} */
