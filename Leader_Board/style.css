@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+}
+input{
+    border: 1px solid lightgreen;
+    font-size: medium;
+    height: 35px;
+    text-align: left;
+    padding: 5px;
+    
+    
+}
+.addplayer{
+    all: unset;
+    background: lightgreen;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    width: 100vw;
+    
+}
+.txt{
+    display: flex;
+    justify-content: space-around;
+
+    width: 65vw;
+    
+    align-items: center;
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+    width: 64vw;
+    align-items: center;
+    background-color:lightgreen ;
+    flex-direction: column;
+    
+    margin-bottom: 100px;
+}
+.nd{
+    text-align: center;
+}
+.dlt,.plus,.minus{
+    all: unset;
+    text-align: center;
+}
