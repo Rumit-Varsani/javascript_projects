@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.h-container{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.h-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+.sec1{
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(bench-accounting-C3V88BOoRoM-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+}
